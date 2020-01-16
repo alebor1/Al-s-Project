@@ -1,0 +1,640 @@
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: ghostwhite;
+  color: black;
+}
+@-ms-viewport{
+  width: device-width;
+}
+@font-face {
+  font-family: 'GaramR';
+  src: local('Raleway'), url(./fonts/EBGaramond-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'GaramB';
+  src: local('Raleway'), url(./fonts/EBGaramond-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'FuturaB';
+  src: local('Lato'), url(./fonts/FuturaLT-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Neue';
+  src: local('HelveticaNeueLTCom'), url(./fonts/HelveticaNeueLTCom-Lt.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NeueB';
+  src: local('HelveticaNeueLTCom'), url(./fonts/HelveticaNeueLTCom-Bd.ttf) format('truetype');
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+.row {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+ padding: 5px;
+  
+}
+.column1 {
+  max-width: 100px;
+  flex: 25%;
+
+
+  
+}
+.column img {
+  
+  vertical-align: top;
+
+  -webkit-box-shadow:  2px 8px 20px -6px rgba(0,0,0,0.61);
+-moz-box-shadow:  2px 8px 20px -6px rgba(0,0,0,0.61);
+  box-shadow:  2px 8px 20px -6px rgba(0,0,0,0.61);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.project{
+  margin: auto;
+
+
+background-color: white;
+border-radius: 10px;
+overflow: hidden;
+
+
+    }
+
+@media only screen and (orientation: portrait) {
+  section .firstPage div{
+    vertical-align: top;
+    
+  
+
+    }
+    section .secondPage div{
+      vertical-align: top;
+     
+
+  
+      }
+      section .thirdPage div{
+        vertical-align: top;
+        
+
+        
+        }
+        section .forthPage div{
+          vertical-align: top;
+
+      
+          }
+          #lineart{
+            bottom:0px;
+      
+            width: 100%;
+            position: absolute;
+            z-index: -10;
+           max-height: 60vh;
+          } 
+          
+          #H_C{
+            padding-top: 100px;
+            font-size: 2em;
+            color: black ;
+            margin: 0px;
+            font-family: 'NeueB';
+           
+          }
+          #H_H{
+            padding-top: 100px;
+            font-size: 2em;
+            color: black ;
+            font-family: 'NeueB';
+          
+          
+          }
+          .innerpage{
+
+            margin: 30px;
+            width: calc(100% - 60px);
+            height: calc(100% - 60px);
+          }
+          .row{
+            margin-top: 100px;
+            margin-bottom: 100px;
+          }
+          .footer{
+            position: absolute;
+            text-align: center;
+            width: calc(100% - 60px);
+            bottom: 0px;
+            font-size: 0.8em;
+            padding-bottom: 30px;
+            
+              }
+              body{
+                font-size:  calc(17px);
+
+              }
+}
+@media only screen and (orientation: landscape) {
+  body{
+    font-size:  calc(17px);
+
+  }
+  #H_H{
+
+    font-size: 3em;
+    color: black ;
+    font-family: 'NeueB';
+  
+
+  }
+
+  #abt p{
+    max-width: 40%;
+  }
+  #H_C{
+                font-size: 3em;
+                color: black ;
+                margin: 0px;
+                font-family: 'NeueB';
+               
+              }
+  section .firstPage div{
+    vertical-align: middle;   
+
+
+    }
+    section .secondPage div{
+      vertical-align: middle;
+      
+      
+  
+      }
+      section .thirdPage div{
+        vertical-align: middle;
+        
+   
+        
+        }
+        section .forthPage div{
+          vertical-align: middle;
+          
+      
+      
+          }
+     
+  #lineart{
+
+
+    top:25%;
+    position: absolute;
+    right: 10%;
+    flex: 50%;
+    max-width: 50vh;
+    z-index: -10;
+
+    
+}
+#lineart1{
+  
+  align-content: middle;
+  display: flex;
+  flex-wrap: wrap;
+      
+  }
+ .subtext{
+ 
+}
+
+
+.row{
+
+  max-height: 50%;
+  vertical-align: middle;
+  margin: auto;
+}
+.innerpage{
+
+margin: 10%;
+width: 80%;
+height: 50%;
+}
+.footer{
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  bottom: 0px;
+  font-size: 0.8em;
+  padding-bottom: 30px;
+  
+    }
+}
+
+
+
+
+
+p{
+  font-family: 'GaramR';
+  font-size: 1.1rem;
+  margin-right: 0px;
+
+ 
+}
+.work-content{
+  font-family: 'GaramR';
+  font-size: 1.7em;
+ 
+}
+
+#H_A{
+ 
+  font-size: 3em;
+  color: black ;
+
+  font-family: 'NeueB';
+
+}
+
+
+ul{
+
+  align-content: top;
+  list-style:none;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0px;
+  padding: 0px;
+
+}
+li p{
+  margin: 0px;
+}
+.container{
+  padding-top: 0px;
+}
+.container p{
+  font-family: 'GaramR';
+padding-bottom: 5px;
+  margin: 0px;
+
+
+}
+#mouse {
+  padding: 0 0;
+  
+  display: block;
+  width: 28px;
+  height: 48px;
+  border-radius: 11px 11px 15px 15px;
+  border: 1px solid ghostwhite;
+  position: relative;
+
+
+
+}
+
+#mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 5px;
+  border-radius: 4px;
+  background: ghostwhite;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+.pageind{
+  position: absolute;
+  right: 0em;
+  font-size: 0.5em;
+  margin: 42px 30px;
+  text-transform: uppercase;
+}
+.pageind2{
+  position: absolute;
+  right: 0em;
+  font-size: 0.3em;
+  margin: 60px 30px;
+  text-transform: uppercase;
+  opacity: 0.1;
+  color: rgb(196, 0, 0);
+}
+.pageind3{
+  position: absolute;
+  right: 0em;
+  font-size: 0.3em;
+  margin: 30px 30px;
+  text-transform: uppercase;
+  opacity: 0.1;
+  color: rgb(196, 0, 0);
+}
+
+.pageind1{
+  position: absolute;
+  right: 0em;
+  font-size: 0.5em;
+  margin: 30px;
+
+}
+#logo{
+  position: absolute;
+  left: 0em;
+
+  margin: 30px;
+}
+#logo1{
+  position: absolute;
+  left: 0em;
+  font-size: 0.5em;
+  margin: 60px 30px;
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+	}
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+	}
+}
+
+
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+#about1 .text-block{
+  margin: 100px 0;
+  border-bottom: none;
+}
+#about1 ul{
+
+  
+    font-size: 1em;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+.about-content{
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+
+
+  .header {
+    font-size: 3em;
+    font-family: NeueB;
+    margin-top: 100px;
+margin-bottom: 100px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #e1e1eb;
+}
+
+h3 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.image-holder {
+    margin: 10px 0;
+    max-width: 100%;
+}
+
+.image {
+width: 100%;
+}
+.content-image {
+  width: 100%;
+  }
+  .grid-2-col{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+  }
+.bg { 
+
+ background-image: url(components/img/profile.jpg); 
+
+  
+    height: 600px; 
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+     margin-top: 100px;
+}
+
+.text-block {
+  padding-bottom: 100px;
+  border-bottom: 2px solid #e1e1eb;
+    width: 100%;
+}
+
+.subheader {
+  font-family: 'NeueB';
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2em; 
+    
+}
+
+.subtitle {
+  font-family: 'Neue';
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+
+.subtext {
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+.thicc {
+  font-family: 'NeueB';
+    font-weight: 900;
+    font-style: italic;
+}
+
+.link {
+    font-weight: normal;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #about1 ul{
+    padding-bottom: 0px;
+    border-bottom: none;
+  
+    display: none;
+  }
+  .container{
+    padding-top: 100px;
+  }
+  ul{
+ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+  #about1 .thicc1{
+
+  
+    display: none;
+  }
+  .to-1-col{
+    grid-template-columns: 1fr;
+  }
+
+
+
+    h1 {
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+
+
+
+    .subheader {
+        font-weight: 900;
+        font-style: italic;
+        font-size: 1.5em; 
+       
+    }
+
+    .subtitle {
+        font-weight: lighter;
+        font-size: 1.3em;
+        line-height: 1.3em;
+    }
+    .subtitle1 {
+      font-weight: bolder;
+      font-size: 1.3em;
+      line-height: 1.3em;
+  }
+    .subtext {
+        font-weight: lighter;
+        font-size: 1.0em;
+        line-height: 1.2em;
+    }
+
+
+
+    .bg { 
+ 
+    background-image: url("components/img/profile.jpg");
+
+    background-position: center;
+
+    margin-top: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+}
+.svgborder{
+
+  margin: auto;
+}
+
+.thicc a{
+  font-weight: normal;
+
+  font-style: bold;
+  color: rgb(196, 0, 0);
+
+}
+
+.thicc1{
+  
+  font-weight: normal;
+  font-style: italic;
+  font-style: bold;
+  color: rgb(196, 0, 0);
+
+}
+#link1{
+  color: rgb(196, 0, 0);
+}
+
+
+
+
+
+
+
+
